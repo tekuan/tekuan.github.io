@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,100&display=swap");
 
 /* Variables */
 :root {
   --font-family: "Roboto", sans-serf;
+  --font-title: "Raleway", sans-serf;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
-  --primary-color: #98a0e6;
+  --bg-dark: #000000;
+  --primary-color: #00a3ff;
   --secondary-color: #ff3582;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #6996a1;
@@ -36,6 +39,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--primary-color);
+  font-family: var(--font-title);
 }
 
 a:hover {
@@ -47,7 +51,7 @@ body {
 }
 
 nav {
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 1;
@@ -55,15 +59,14 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--primary-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav h1 {
-  color: var(--bg-color);
+nav img {
+  height: 4rem;
+  margin-left: 2rem;
 }
 
 nav a {
-  color: var(--bg-color);
+  color: var(--primary-color);
   transition: var(--transition);
 }
 nav a:hover {
@@ -80,15 +83,12 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
-.burger-menu {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: none;
+.page-title {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  font-family: var(--font-title);
 }
-
 .hero {
   display: flex;
   align-items: center;
@@ -98,34 +98,23 @@ nav ul li {
   margin: auto;
 }
 .hero img {
-  width: 30.5rem;
-  border-radius: 25rem;
-}
-
-.bio {
-  width: 25rem;
-  padding: 0.625rem;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-}
-
-.bio h1 {
-  margin-bottom: var(--bottom-margin);
-}
-
-.bio p {
-  line-height: var(--line-height);
-  padding: 0.3rem 0;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 200px;
 }
 
 .more-about {
-  background-color: var(--bg-color);
-  padding: 1rem 6rem;
+  background-color: var(--primary-color);
+  padding: 6rem 6rem;
+  margin-top: 1rem;
+  height: 25rem;
+  color: var(--bg-color);
 }
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
+  font-family: var(--font-title);
 }
 
 .more-about p {
@@ -142,6 +131,7 @@ nav ul li {
 
 .skill-header {
   margin-bottom: 1rem;
+  font-family: var(--font-title);
 }
 
 .skills-wrapper img {
@@ -179,6 +169,7 @@ nav ul li {
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
+  font-family: var(--font-title);
 }
 
 .project-container {
@@ -212,6 +203,7 @@ nav ul li {
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  font-family: var(--font-title);
 }
 
 .contact-form-container {
@@ -278,4 +270,8 @@ footer {
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
+}
+.app p {
+  background-color: var(--bg-dark);
+  width: 10rem;
 }
