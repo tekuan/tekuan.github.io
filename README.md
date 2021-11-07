@@ -1,2 +1,12 @@
-# portfolio
-A JavaScript project
+
+# A landing page portfolio
+
+Build a portfolio site with landing page.
+
+
+
+## Use
+
+CSS
+HTLM
+JavaScript
