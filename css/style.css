@@ -150,10 +150,17 @@ nav ul li {
   padding: 20px;
   margin: 10px;
 }
+.construction {
+  width: 20rem;
+}
+
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: 2rem;
+  border-style: dashed;
+  border-width: 0.2rem 0 0 0;
+  border-color: var(--primary-color);
 }
 
 .project-pic {
@@ -198,12 +205,15 @@ nav ul li {
 }
 .contact {
   margin-top: 2rem;
+  background-color: var(--primary-color);
 }
 
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
   font-family: var(--font-title);
+  color: var(--bg-color);
+  padding: 2rem 0;
 }
 
 .contact-form-container {
@@ -212,6 +222,7 @@ nav ul li {
   padding: 0.938rem;
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
+  background-color: var(--bg-color);
 }
 .contact-form-container label {
   line-height: 2.7em;
@@ -274,4 +285,33 @@ footer {
 .app p {
   background-color: var(--bg-dark);
   width: 10rem;
+}
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
