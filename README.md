@@ -8,5 +8,5 @@ Build a portfolio site with landing page.
 ## Use
 
 - CSS
-- HTLM
+- HTML
 - JavaScript
