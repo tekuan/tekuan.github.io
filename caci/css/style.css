@@ -1,0 +1,33 @@
+body {
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Cor do texto padrão */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.code-block {
+    border: 1px solid #959191;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    white-space: pre-wrap; 
+  }
+  
