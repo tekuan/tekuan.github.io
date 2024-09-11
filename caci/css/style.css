@@ -19,7 +19,7 @@ body::before {
     background-repeat: no-repeat;
     background-position: center center;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.03;
 }
 
 .title {
@@ -36,8 +36,8 @@ h1 {
 
 a {
     text-decoration: none !important;
-    display: block;
     margin: 10px 0;
+    padding: 2px;
     text-align: center;
 }
 

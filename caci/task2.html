@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CACI</title>
+  <link rel="icon" href="./assets/images/elderly.png" type="image/png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+    rel="stylesheet">
+    <style>
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #6ee7c3;
+
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li code {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1 class="header-title full-title">Projeto de Cadastro de Profissionais
+      Cuidadores de Idosos</h1>
+    <h1 class="header-title short-title">CACI</h1>
+  </header>
+  <main>
+    <a href="index.html" class="title" title="Voltar para a Home">🏠 Inicio</a>
+    <h1>Vamos criar e publicar um Formulário no GitHub Pages!</h1>
+
+    <h2>1. Criar uma Conta no GitHub (Windows, macOS, Linux)</h2>
+    <ul>
+        <li>Acesse o site GitHub.com.</li>
+        <li>Clique em <strong>Sign up</strong> no canto superior direito.</li>
+        <li>Insira seu e-mail, crie uma senha e escolha um nome de usuário.</li>
+        <li>Confirme seu e-mail e siga as instruções para finalizar a criação da conta.</li>
+    </ul>
+
+    <h2>2. Criar um Repositório no GitHub (Windows, macOS, Linux)</h2>
+    <ul>
+        <li>Após criar sua conta, clique no botão <strong>+</strong> no canto superior direito e selecione <strong>New repository</strong>.</li>
+        <li>Escolha um nome, como <strong>SEU_USUARIO.github.io</strong>, e marque a opção <strong>Public</strong>.</li>
+        <li>Marque <strong>Add a README file</strong>.</li>
+        <li>Clique em <strong>Create repository</strong>.</li>
+    </ul>
+
+    <h2>3. Instalar o Git (Windows, macOS, Linux)</h2>
+    <ul>
+        <li><strong>Windows:</strong> Baixe o Git <a href="https://git-scm.com/download/win">aqui</a> e siga o processo de instalação padrão.</li>
+        <li><strong>macOS:</strong> No terminal, execute o seguinte comando para instalar o Git:</li>
+        <pre><code>xcode-select --install</code></pre>
+        <li><strong>Linux:</strong> No terminal, use o gerenciador de pacotes da sua distribuição:</li>
+        <li><strong>Debian/Ubuntu:</strong></li>
+        <pre><code>sudo apt update
+sudo apt install git</code></pre>
+        <li><strong>Fedora:</strong></li>
+        <pre><code>sudo dnf install git</code></pre>
+    </ul>
+
+    <h2>4. Clonar o Repositório (Windows, macOS, Linux)</h2>
+    <ul>
+        <li>Abra o Git Bash (Windows) ou o Terminal (macOS/Linux).</li>
+        <li>Execute o comando abaixo, substituindo <strong>SEU_USUARIO</strong> pelo seu nome de usuário:</li>
+        <pre><code>git clone https://github.com/SEU_USUARIO/SEU_USUARIO.github.io.git</code></pre>
+        <li>Entre na pasta do repositório:</li>
+        <pre><code>cd SEU_USUARIO.github.io</code></pre>
+    </ul>
+
+    <h2>5. Criar um Formulário Simples em HTML (Windows, macOS, Linux)</h2>
+    <p>Crie um arquivo <strong>index.html</strong> com o código HTML abaixo:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Formulário de Contato&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Formulário de Contato&lt;/h1&gt;
+  &lt;form action="https://formsubmit.co/seu-email@example.com" method="POST"&gt;
+    &lt;label for="name"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;&lt;br&gt;
+    
+    &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;
+    
+    &lt;label for="message"&gt;Mensagem:&lt;/label&gt;
+    &lt;textarea id="message" name="message" required&gt;&lt;/textarea&gt;&lt;br&gt;
+    
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <p>Salve o arquivo <strong>index.html</strong> na pasta do repositório.</p>
+
+    <h2>6. Fazer o Commit e Enviar para o GitHub (Windows, macOS, Linux)</h2>
+    <ul>
+        <li>No terminal, adicione o arquivo ao controle de versão:</li>
+        <pre><code>git add index.html</code></pre>
+        <li>Faça o commit do arquivo:</li>
+        <pre><code>git commit -m "Adiciona formulário HTML"</code></pre>
+        <li>Envie as alterações para o GitHub:</li>
+        <pre><code>git push origin main</code></pre>
+    </ul>
+
+    <h2>7. Ativar o GitHub Pages (Windows, macOS, Linux)</h2>
+    <ul>
+        <li>No GitHub, acesse o repositório <code>https://github.com/SEU_USUARIO/SEU_USUARIO.github.io</code>.</li>
+        <li>Vá em <strong>Settings</strong> (Configurações).</li>
+        <li>Na seção <strong>GitHub Pages</strong>, em "Source", selecione a opção <strong>main branch</strong> e clique em <strong>Save</strong>.</li>
+        <li>O GitHub gerará um link do seu site, que será algo como:</li>
+        <pre><code>https://SEU_USUARIO.github.io/SEU_USUARIO.github.io/</code></pre>
+    </ul>
+
+    <h2>8. Acessar o Formulário</h2>
+    <p>Agora, seu formulário estará online no link gerado pelo GitHub Pages.</p>
+  </main>
+
+</body>
+</html>
