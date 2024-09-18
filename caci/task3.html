@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CACI</title>
+  <link rel="icon" href="./assets/images/elderly.png" type="image/png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+    rel="stylesheet">
+    <style>
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #6ee7c3;
+
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li code {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1 class="header-title full-title">Projeto de Cadastro de Profissionais
+      Cuidadores de Idosos</h1>
+    <h1 class="header-title short-title">CACI</h1>
+  </header>
+  <main>
+    <a href="index.html" class="title" title="Voltar para a Home">🏠 Inicio</a>
+
+    <h2>1. Explorando uma API Pública (GET Requests)</h2>
+    <ul>
+      <li>Escolha uma API pública.</li>
+      <li>Utilize ferramentas como <strong>Postman</strong>, Insomnia ou o próprio navegador para fazer requisições.</li>
+      <li><strong>Exemplo de requisição:</strong> Buscar um post de um blog fictício usando a URL <a href="https://jsonplaceholder.typicode.com/posts/1">https://jsonplaceholder.typicode.com/posts/1</a>.</li>
+    </ul>
+
+    <h2>2. Criando Recursos (POST Requests)</h2>
+    <ul>
+        <li>Use a mesma API ou outra para fazer uma requisição do tipo POST, criando um novo recurso (ex: um novo usuário ou post).</li>
+        <li>Criar um novo recurso enviando dados no body da requisição, como:</li>
+        <pre><code>
+          {
+            "title": "Novo Post",
+            "body": "Conteúdo do post",
+            "userId": 1
+          }
+          
+        </code></pre>
+        <li>Verificar o status code retornado, como <strong>201 Created</strong>, e verificar se o recurso foi de fato criado.</li>
+    </ul>
+
+    <h2>3. Atualizando Recursos (PUT / PATCH Requests)</h2>
+    <ul>
+      <li>Fazer uma requisição PUT ou PATCH para atualizar informações de um recurso existente, como alterar o título de um post.</li>
+      <li>Modificar um post existente com uma requisição PUT ou PATCH, enviando apenas os campos que deseja alterar::</li>
+      <pre><code>
+        {
+          "title": "Post Atualizado"
+        }        
+      </code></pre>
+      <li>Verificar o status code retornado, como <strong>201 Created</strong>, e verificar se o recurso foi de fato atualizado.</li>
+    </ul>
+
+    <h2>4. Excluindo Recursos (DELETE Requests)</h2>
+    <ul>
+      <li>Fazer uma requisição do tipo DELETE para remover um recurso.</li>
+      <li>Escolher um recurso existente e excluí-lo, como:</li>
+      <pre><code>
+        DELETE https://jsonplaceholder.typicode.com/posts/1 
+      </code></pre>
+      <li>Verificar o status code retornado, como <strong>201 Created</strong>, e verificar se o recurso foi de fato atualizado.</li>
+    </ul>
+  </main>
+</body>
+</html>
